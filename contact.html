@@ -114,64 +114,29 @@
         </div>
         <!-- /.row -->
 
-        <!-- Contact Form -->
-        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Send us a Message</h3>
-                <form name="sentMessage" id="contactForm" action="markcoffiekenneth@gmail.com" method="POST" class="form">
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Full Name:</label>
-                            <input type="text" class="form-control" name="name" required data-validation-required-message="Please enter your name.">
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Phone Number:</label>
-                            <input type="tel" class="form-control" name="telephone" required data-validation-required-message="Please enter your phone number.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Email Address:</label>
-                            <input type="email" class="form-control" name="email" required data-validation-required-message="Please enter your email address.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Message:</label>
-                            <textarea rows="10" cols="100" class="form-control" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Type:</label>
-                                <select name="options">
-                                  <option value="carpet">Carpet</option>
-                                  <option value="vinyl">Vinyl</option>
-                                  <option value="tiles">Tiles</option>
-                                  <option value="laminate">Laminate</option>
-                                </select>   
-                        </div>
-                    </div>
-
-                    <div class="control-group form-group">
-                         <input type="text" name="_gotcha" style="display:none" />
-                    </div>
-
-                    <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary" value="Send">Send Message</button>
-                </form>
-            </div>
-
-        </div>
-        <!-- /.row -->
 
         <hr>
+        <div class="contactform">
+            <form action="http://formspree.io/kennymark@kennymark.me" method="POST" class="form" >
+                <label for="">Subject</label> <br>
+                <input type="text" name="subject"> <br> <br>
+                <label for="">Your Name</label> <br>
+                <input type="text" name="name"> <br> <br>
+                <label for="">Email</label><br>
+                <input type="email" name="_replyto"> <br> <br>  
+                <label for="message">Message</label> <br> <br>
+                <textarea name="message" id="" cols="40" rows="12"></textarea> <br><br>
 
+                <select name="options">
+                    <option value="carpet">Carpet</option>
+                    <option value="vinyl">Vinyl</option>
+                    <option value="tiles">Tiles</option>
+                    <option value="laminate">Laminate</option>
+                </select> <br><br>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="submit" class="btn" value="Send">
+            </form>
+        </div>
         <!-- Footer -->
         <footer>
             <div class="row">
